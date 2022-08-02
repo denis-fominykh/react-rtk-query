@@ -5,6 +5,7 @@ import type { GetPeopleResponseSuccess, GetCharacterResponseSuccess } from 'type
 
 export const peopleApi = createApi({
   reducerPath: 'peopleApi',
+  tagTypes: ['People'],
   baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_BASE_URL }),
   endpoints: builder => ({
     getAllPeople: builder.query<GetPeopleResponseSuccess, void>({
