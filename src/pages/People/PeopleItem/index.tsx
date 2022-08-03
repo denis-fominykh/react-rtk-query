@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 
 import { Loader } from 'components/Loader';
 import { PageHeader, PageContent, ButtonReverseLink } from 'pages/People/PeopleItem/styled';
-import { useGetCharacterByIdQuery } from 'service/peopleApi';
+import { useGetCharacterByIdQuery } from 'redux/people/query';
 
 type PeopleParams = {
   itemId: string | undefined;

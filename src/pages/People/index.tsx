@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { Loader } from 'components/Loader';
 import { ItemsList, PageHeader } from 'pages/People/styled';
-import { useGetAllPeopleQuery } from 'service/peopleApi';
+import { useGetAllPeopleQuery } from 'redux/people/query';
 
 export function People(): JSX.Element {
   const { isLoading, isError, data, status } = useGetAllPeopleQuery();
